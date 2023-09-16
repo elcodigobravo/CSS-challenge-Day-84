@@ -1,0 +1,76 @@
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: #E3E7EA;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  place-items: center;
+
+}
+
+.book {
+  position: relative;
+  width: 200px;
+  height: 280px;
+  border-radius: 2px 4px 4px 2px;
+  background: #1e1e1e;
+  background: linear-gradient(45deg, #1e1e1e 0%, #4f4f4f 100%);
+}
+
+.book:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 2px 0 0 2px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 20%, rgba(255, 255, 255, 0.1) 45%, rgba(0, 0, 0, 0.15) 49%, rgba(0, 0, 0, 0.15) 84%, rgba(0, 0, 0, 0) 100%);
+}
+
+.book:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  top: -1px;
+  right: 25px;
+  bottom: -1px;
+  border-radius: 1px;
+  box-shadow: -1px 0px 1px 0 rgba(0, 0, 0, 0.4);
+  background: #a90329;
+  background: linear-gradient(to right, #a90329 0%, #8e0028 12%, #a90329 25%, #8e0028 37%, #a90329 50%, #8e0028 62%, #a90329 75%, #8e0028 87%, #a90329 100%);
+}
+
+.book .title {
+  position: absolute;
+  top: 55px;
+  left: 33px;
+}
+
+
+.book .title .big {
+  font-size: 30px;
+  line-height: 100%;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.book .title .small {
+  font-size: 13px;
+  line-height: 160%;
+  font-weight: 400;
+  font-style: italic;
+  padding-left: 2px;
+  color: #ccc;
+}
